@@ -8,7 +8,7 @@ import { client } from '../client'; // Sanity client for database interactions
 import Spinner from './Spinner'; // Component to display loading spinner
 
 const CreatePin = ({ user }) => {
-  console.log(user)
+  // console.log(user)
   // State variables for managing pin creation form
   const [title, setTitle] = useState(''); // Title of the pin
   const [about, setAbout] = useState(''); // Description of the pin
@@ -36,6 +36,7 @@ const CreatePin = ({ user }) => {
         .upload('image', selectedFile, { contentType: selectedFile.type, filename: selectedFile.name })
         .then((document) => {
           setImageAsset(document); // Set uploaded image asset
+          // console.log(document)
           setLoading(false); // Reset loading state
         })
         .catch((error) => {

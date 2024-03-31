@@ -8,7 +8,7 @@ import { BsFillArrowUpRightCircleFill } from 'react-icons/bs'; // Icon for exter
 import { client, urlFor } from '../client'; // Importing client for interacting with Sanity CMS
 
 const Pin = ({ pin }) => {
-  console.log(pin)
+  // console.log(pin)
 
   // State variables for managing pin hover and saving state
   const [postHovered, setPostHovered] = useState(false);
