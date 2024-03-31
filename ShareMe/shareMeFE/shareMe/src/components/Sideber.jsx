@@ -33,7 +33,7 @@ const Sidebar = ({ closeToggle, user }) => {
           <h3 className="mt-2 px-5 text-base 2xl:text-xl">Discover cateogries</h3>
 
           {/* Dynamically generate category links */}
-          {categories.slice(0, categories.length - 1).map((category) => (
+          {categories.slice(0, categories.length).map((category) => (
             <NavLink
               to={`/category/${category.name}`}
               className={({ isActive }) => (isActive ? isActiveStyle : isNotActiveStyle)}
