@@ -28,7 +28,7 @@ const Login = () => {
       .then(response => response.json())
       .then(data => {
         // // localStorage:This is a web storage object that allows you to store key-value pairs in the browser with no expiration time. The data stored in localStorage persists even after the browser is closed and reopened.
-        //  localStorage.setItem('user', JSON.stringify(data));
+         localStorage.setItem('user', JSON.stringify(data));
         //  console.log(data);
         const { name, id, email, picture } = data;
         const doc = {
