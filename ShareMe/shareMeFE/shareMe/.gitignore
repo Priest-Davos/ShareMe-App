@@ -24,3 +24,5 @@ dist-ssr
 *.sw?
 
 .env
+project1\ShareMe\shareMeFE\shareMe\.env
+shareMe\.env
